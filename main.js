@@ -14,7 +14,9 @@ $(document).ready( function(){
     var c = Shape.Circle( 200, 200);
     c.fillColor = 'black';
     var text = new PointText( 200, 200);
-    text.justification = 'center' ; text.fillColor = 'white'; text.fontSize = 20;
+    text.justification = 'center' ;
+    text.fillColor = 'white'; 
+    text.fontSize = 20;
     text.center = 'Hello, World!!!';
 
     tool.onMouseDown = function ( event ) {
