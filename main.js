@@ -17,7 +17,7 @@ $(document).ready( function(){
     text.justification = 'center' ; text.fillColor = 'white'; text.fontSize = 20;
     text.center = 'Hello, World!!!';
 
-    tool.onMouseDown = ( event ) {
+    tool.onMouseDown = function ( event ) {
         var c = Shape.Circle( event.point, 20);
         c.fillColor = 'green';
     };
