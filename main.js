@@ -10,7 +10,7 @@ $(document).ready( function(){
             c.fillColor = 'green';
         }
     }
-    var tool = new tool();
+    var Tool = new Tool();
     var c = Shape.Circle( 200, 200);
     c.fillColor = 'black';
     var text = new PointText( 200, 200);
