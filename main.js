@@ -1,6 +1,6 @@
 console.log('main.js loaded')
 $(document).ready( function(){
-    'use strict';
+    'user strict';
     paper.install( window );
     paper.setup( document.getElementById( 'mainCanvas') );
     var c;
@@ -10,7 +10,7 @@ $(document).ready( function(){
             c.fillColor = 'green';
         }
     }
-    var Tool = new Tool();
+    var tool = new Tool();
     var c = Shape.Circle( 200, 200);
     c.fillColor = 'black';
     var text = new PointText( 200, 200);
@@ -21,8 +21,8 @@ $(document).ready( function(){
         var c = Shape.Circle( event.point, 20);
         c.fillColor = 'green';
     };
-   paper.view.drew();
-   console.log( ' jquery - main loaded');
+   paper.view.draw();
+   console.log( ' jquery - main.js loaded');
    
 
 });
